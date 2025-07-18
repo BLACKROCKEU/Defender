@@ -85,3 +85,6 @@ def export_data():
         filename = f"blackrockpay_txn_{datetime.datetime.now().strftime('%Y%m%d')}.csv"
         return send_file(mem, mimetype="text/csv", as_attachment=True, download_name=filename)
     return render_template("export_data.html", download_link=None)
+    
+    if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=10000)
