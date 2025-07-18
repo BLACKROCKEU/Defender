@@ -86,5 +86,8 @@ def export_data():
         return send_file(mem, mimetype="text/csv", as_attachment=True, download_name=filename)
     return render_template("export_data.html", download_link=None)
     
-    if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=10000)
+    import os
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host="0.0.0.0", port=port)
