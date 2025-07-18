@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.env
+*.env
+*.db
+instance/
+password.json
+master.json
+secret.json
+.DS_Store
+.vscode/
+.idea/
